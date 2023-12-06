@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+long long x, y;
+int main()
+{
+    cin>>x>>y;
+    cout<<"Punctul se afla la coordonatele: ("<<x<<" , "<<y<<")"<<'\n';
+    
+    if(x>0 && y>0){
+        cout<<"Punctul se afla in primul cadran";
+    }
+    else if(x>0 && y<0){
+        cout<<"Punctul se afla in al doilea cadran";
+    }
+    else if(x<0 && y<0){
+        cout<<"Punctul se afla in al treilea cadran";
+    }
+    else if(x<0 && y>0){
+        cout<<"Punctul se afla in al patrulea cadran";
+    }
+    else if(x==0 && y!=0){
+        cout<<"Punctul se afla pe dreapta x";
+    }
+    else if(y==0 && x!=0){
+        cout<<"Punctul se afla pe dreapta y";
+    }
+    else if(x==0 && y==0){
+        cout<<"Punctul se afla in origine";
+    }
+
+    return 0;
+}
